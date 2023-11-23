@@ -23,8 +23,8 @@ RUN apt update && \
     libbz2-dev
 
 # Copy files
-COPY requirements.txt .
+COPY requirements.in .
 
 # Install dependencies
-RUN bash ./install_dependencies.sh ./requirements.txt && \
-    rm ./install_dependencies.sh ./requirements.txt
+RUN bash ./install_dependencies.sh ./requirements.in && \
+    rm ./install_dependencies.sh ./requirements.in
