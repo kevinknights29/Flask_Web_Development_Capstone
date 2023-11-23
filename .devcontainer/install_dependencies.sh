@@ -25,3 +25,9 @@ source .venv/bin/activate
 
 # Set the path of the requirements.txt file
 REQUIREMENTS_FILE=$1
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Install the Python packages
+python -m pip install -r $REQUIREMENTS_FILE
